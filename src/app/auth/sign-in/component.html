@@ -1,0 +1,25 @@
+<div class="auth-content">
+  <form>
+    <div class="form-group">
+      <label>Email: </label>
+      <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+      <label>Password: </label>
+      <input type="password" class="form-control" placeholder="*******" required>
+    </div>
+    <div class="container">
+      <div class="col">
+        <div class="row justify-content-center">
+          <button type="submit" class="btn btn-primary">SignIn</button>
+        </div>
+        <div class="row justify-content-center">
+          <small><button type="button" class="btn btn-link" (click)="goToForgotPassword()">Forgot your password?</button></small>
+        </div>
+        <div class="row justify-content-center">
+          <small><button type="button" class="btn btn-link" (click)="goToCreate()">Create a new account</button></small>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
