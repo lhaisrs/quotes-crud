@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'sign-in',
@@ -7,6 +8,11 @@ import { Router } from '@angular/router';
   styleUrls: ['../shared/auth.component.css']
 })
 export class SignInComponent {
+
+  signInForm = new FormGroup({
+    email: new FormControl(''),
+    password: new FormControl('')
+  })
 
   constructor(private router: Router){ }
 
@@ -16,6 +22,10 @@ export class SignInComponent {
 
   goToCreate() {
     this.router.navigate(['/createUser']);
+  }
+
+  signIn(){
+    console.log("Signin In");
   }
 
 }

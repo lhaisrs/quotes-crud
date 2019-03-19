@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 //Components
 import { SignInComponent } from './sign-in/component';
@@ -10,6 +11,9 @@ import { CreateUserComponent } from './create-user/component';
     SignInComponent,
     ForgotPasswordComponent,
     CreateUserComponent
+  ],
+  imports: [
+    ReactiveFormsModule
   ]
 })
 export class AuthModule { }
