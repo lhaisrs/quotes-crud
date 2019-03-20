@@ -1,27 +1,10 @@
-# QuotesCrud
+# Quotes CRUD
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
+It's an Angular application using **angular-ngrx-data** 
+I'm analysing why and how to use [**angular-ngrx-data**](https://github.com/johnpapa/angular-ngrx-data) in a scalable Angular application
 
-## Development server
+# Why use angular ngrx data?
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Why don't use angular ngrx data?
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* Doesn't make sense to use with Authentication, you'll need to create your AuthService by yourself with pure Angular or use it with [**ngrx**](https://ngrx.io/)
